@@ -10,6 +10,19 @@
 
    <style>
 
+       @media (max-width: 576px) {
+    .admission-badge {
+        font-size: 14px;
+    }
+}
+       .admission-badge {
+    white-space: normal;
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
 .nav-link {
     font-weight: 500;
 }
@@ -188,11 +201,12 @@ html {
 <section class="hero">
     <h1 class="fw-bold">Indian Institute</h1>
     <h4 class="text-primary">Empowering Students for a Better Tomorrow</h4>
-   <div class="mt-4">
-    <span class="badge bg-warning text-dark fs-6 px-4 py-2">
+   <div class="mt-4 px-3">
+    <span class="badge bg-warning text-dark fs-6 px-3 py-2 admission-badge">
         🎓 Admissions Open for Graduate & Post Graduate Programs
     </span>
 </div>
+
     <a href="#contact" class="btn btn-lg btn-warning mt-4 shadow">
     Apply Now
 </a>
