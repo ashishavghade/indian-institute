@@ -151,6 +151,15 @@ html {
     .btn-primary:hover {
         background: #17a589;
     }
+       .badge {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
 </style>
 
 </head>
@@ -179,7 +188,11 @@ html {
 <section class="hero">
     <h1 class="fw-bold">Indian Institute</h1>
     <h4 class="text-primary">Empowering Students for a Better Tomorrow</h4>
-    <p class="mt-3">Admissions Open for Graduate & Post Graduate Programs</p>
+   <div class="mt-4">
+    <span class="badge bg-warning text-dark fs-6 px-4 py-2">
+        🎓 Admissions Open for Graduate & Post Graduate Programs
+    </span>
+</div>
     <a href="#contact" class="btn btn-lg btn-warning mt-4 shadow">
     Apply Now
 </a>
@@ -188,11 +201,20 @@ html {
 
 <!-- ABOUT -->
 <section id="about" class="section">
-    <h2 class="section-title">About Us</h2>
-    <p>
-        Indian Institute is committed to providing quality education at undergraduate
-        and postgraduate levels...
-    </p>
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p style="font-size: 17px; line-height: 1.8;">
+                    Indian Institute is committed to providing quality education at undergraduate
+                    and postgraduate levels. We focus on academic excellence, skill development,
+                    and career-oriented learning to help students achieve success in their
+                    professional journey.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 
 
